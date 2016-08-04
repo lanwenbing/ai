@@ -1,11 +1,8 @@
-package com.atintelligence.ai.controller;
+package com.atintelligence.ai.service.spark;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-import org.springframework.stereotype.Controller;
-
-@Controller
 public class JavaToPython {
 
 	public static void main(String args[]) {
@@ -13,8 +10,8 @@ public class JavaToPython {
 	      String line;
 	      
 	      String[] callAndArgs= {"python","for.py","arg1","arg2"};
-	      String scriptDir = "C:\\Personal File\\ML\\python example";
-	      Process p = Runtime.getRuntime().exec("cmd /c \"cd " + scriptDir + " && python for.py\"");
+	      String scriptDir = "C:\\Personal File\\ML\\python study\\example";
+	      Process p = Runtime.getRuntime().exec("cmd /c \"cd " + scriptDir + " && python demo.py\"");
 	      BufferedReader bri = new BufferedReader
 	        (new InputStreamReader(p.getInputStream()));
 	      BufferedReader bre = new BufferedReader

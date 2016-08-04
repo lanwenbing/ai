@@ -91,7 +91,7 @@ public class UserController {
     public String getByUsername(String username) {
         String userId;
         try {
-            User user = userDao.findByUsername(username);
+            User user = userDao.findByName(username);
             userId = String.valueOf(user.getId());
         }
         catch (Exception ex) {
